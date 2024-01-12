@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally within .game-container */
+    justify-content: center; /* Center vertically within .game-container */
+    position: relative; /* Add position relative for absolute positioning */
+}
+
+h1 {
+    color: #333;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+.score {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
+
+.game-over-popup {
+    display: none;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    position: absolute; /* Position it relative to .game-container */
+    top: 50%; /* Center vertically within .game-container */
+    left: 50%; /* Center horizontally within .game-container */
+    transform: translate(-50%, -50%); /* Center it exactly in the middle */
+    background-color: white;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    z-index: 1; /* Ensure it's on top of other elements */
+}
